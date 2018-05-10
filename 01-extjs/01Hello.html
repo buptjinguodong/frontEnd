@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link href="theme-classic-all.css" rel="stylesheet" />
+      <script type="text/javascript" src="ext-all.js"></script>
+      <script type="text/javascript">
+         Ext.onReady(function() {
+         Ext.create('Ext.Panel', {
+            renderTo: 'helloWorldPanel',
+            height: 100,
+            width: 200,
+            title: 'Hello world',
+            html: 'First Ext JS Hello World Program'
+            });
+         });
+
+         Ext.define(studentApp.view.StudentDeatilsGrid, {
+            extend : 'Ext.grid.GridPanel',
+            id : 'studentsDetailsGrid',
+            store : 'StudentsDetailsGridStore',
+            renderTo : 'studentsDetailsRenderDiv',
+            layout : 'fit',
+            columns : [{
+               text : 'Student Name',
+               dataIndex : 'studentName'
+            },{
+               text : 'ID',
+               dataIndex : 'studentId'
+            },{
+               text : 'Department',
+               dataIndex : 'department'
+            }]
+         });
+      </script>
+   </head>
+   <body>
+      <div id="helloWorldPanel"></div>
+   </body>
+</html>

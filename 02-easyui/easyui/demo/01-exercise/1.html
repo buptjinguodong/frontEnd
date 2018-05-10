@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Accordion Actions - jQuery EasyUI Demo</title>
+	<link rel="stylesheet" type="text/css" href="../../themes/default/easyui.css">
+	<link rel="stylesheet" type="text/css" href="../../themes/icon.css">
+	<link rel="stylesheet" type="text/css" href="../demo.css">
+	<script type="text/javascript" src="../../jquery.min.js"></script>
+	<script type="text/javascript" src="../../jquery.easyui.min.js"></script>
+	<script type="text/javascript" src="1.js"></script>
+	<style type="text/css">
+		.dd-demo {
+			width: 60px;
+			height: 100px;
+			background: yellow;
+		}
+
+	</style>
+</head>
+<body>
+
+	<h3>Layout</h3>
+	<div id="cc" class="easyui-layout" style="width:100%;height:876px;">
+	    <div data-options="region:'north',title:'North Title',split:true" style="height:100px;"></div>
+	    <div data-options="region:'south',title:'South Title',split:true" style="height:100px;"></div>
+	    <div data-options="region:'east',title:'East',split:true" style="width:100px;"></div>
+	    <!-- <div data-options="region:'west',title:'West',split:true" style="width:200px;"></div> -->
+	    <div data-options="region:'center',title:'center title'" style="padding:5px;background:#eee;"></div>
+	</div>
+
+
+	<h3>Accordion</h3>
+	<div id="aa" class="easyui-accordion" style="width:300px;height:200px;">
+	</div>
+
+	<h3>Tabs</h3>
+	<div id="tt" class="easyui-tabs" style="width:500px;height:250px;">
+	</div>
+
+	<h3>Panel</h3>
+	<div id="p" style="padding:10px;">
+	    <p>panel content.</p>
+	    <p>panel content.</p>
+	</div>
+
+	<h3>Menu</h3>
+	<div id="mm" class="easyui-menu" style="width:120px;">
+		<div onclick="javascript:alert('new')">New</div>
+		<div>
+			<span>Open</span>
+			<div style="width:150px;">
+				<div><b>Word</b></div>
+				<div>Excel</div>
+				<div>PowerPoint</div>
+			</div>
+		</div>
+		<div icon="icon-save">Save</div>
+		<div class="menu-sep"></div>
+		<div>Exit</div>
+	</div>
+
+
+	<h3>draggable && droppable</h3>
+	<div id="dd1" class="dd-demo"></div>
+	<div id="dd2" class="dd-demo"></div>
+	<div id="dd3" class="dd-demo"></div>
+</body>
+</html>
